@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>Canvas transformations</title>
+
+        <!-- <script type="text/javascript" src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script> -->
+        <script type="text/javascript" src="Common/webgl-utils.js"></script>
+        <script type="text/javascript" src="Common/initShaders.js"></script>
+        <script type="text/javascript" src="Common/MV.js"></script>
+        <script type="text/javascript" src="transformations.js"></script>
+    </head>
+
+    <body>
+
+        <canvas id="gl-canvas" width="800" height="500">
+            Oops ... your browser doesn't support the HTML5 canvas element
+        </canvas>
+
+        <h4>Transformations</h4>
+
+        <form autocomplete="off">
+            <input type="radio" id="move" name="transform" value="move" checked>
+            <label for="move">Move</label><br>
+            <input type="radio" id="rotate" name="transform" value="rotate">
+            <label for="rotate">Rotate</label><br>
+            <input type="radio" id="scale" name="transform" value="scale">
+            <label for="scale">Scale</label><br>
+        </form>
+        <button type="submit" id="save">Save</button>
+        <button type="submit" id="load">Load</button>
+        <button type="submit" id="clear">Clear</button>
+    </body>
+</html>
